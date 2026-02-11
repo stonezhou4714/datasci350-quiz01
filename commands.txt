@@ -34,3 +34,14 @@ git merge feature-update
 git add commands.txt
 git commit -m "Add full command history"
 git push origin main
+
+#Bonus
+git remote add upstream <original repo url>
+git remote -v
+git push origin feature-update
+
+git rebase -i HEAD~2
+git push origin main --force
+
+touch .git/hooks/pre-commit
+chmod +x .git/hooks/pre-commit
